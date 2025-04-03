@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 
 import "@/styles/globals.css";
+import Footer from "@/components/layout/Footer";
 
 
 
@@ -48,6 +49,11 @@ export default function RootLayout({
                 className={`antialiased`}
             >
                 {children}
+
+                {/* Footer */}
+                <div className='stick bottom-0'>
+                    <Footer />
+                </div>
             </body>
         </html>
     );

@@ -38,7 +38,7 @@ const RootPage = () => {
 
 
     return (
-        <>
+        <div className='flex flex-col items-center w-full h-full pb-48'>
             {/* Search & Filter Section */}
             <section className='flex justify-between items-center w-full px-5 border-y border-gray-700 py-6'>
                 <Input search={search} handleSearchChange={handleSearchChange} />
@@ -63,13 +63,12 @@ const RootPage = () => {
                         </div>
                     ))
                 ) : (
-                    <div className='w-full flex justify-center items-center py-10'>
-                        <h2 className='text-gray-400'>No games found</h2>
+                    <div className='col-span-12 py-10'>
+                        <h2 className='text-gray-400 w-full text-center'>No games found</h2>
                     </div>
                 )}
-
             </section>
-        </>
+        </div>
     )
 }
 
