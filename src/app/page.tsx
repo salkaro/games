@@ -5,18 +5,18 @@ import RootPage from "@/components/Page/RootPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Is This Website Down? Check Website Status Instantly - Salkaro",
-    description: "Quickly check if a website is down or experiencing issues. Enter a URL and get real-time uptime status. Free and easy-to-use website monitoring tool.",
+    title: "Fun Games Collection - Salkaro",
+    description: "Explore a fun collection of interactive and engaging games for all ages! From brain teasers to action-packed challenges, Salkaro offers a variety of online games to entertain and improve your skills. Play now and discover your new favorite game!",
     openGraph: {
-        title: 'Is This Website Down? Check Website Status Instantly - Salkaro',
-        description: 'Quickly check if a website is down or experiencing issues. Enter a URL and get real-time uptime status. Free and easy-to-use website monitoring tool.',
+        title: 'Fun Games Collection - Salkaro',
+        description: 'Explore a fun collection of interactive and engaging games for all ages! From brain teasers to action-packed challenges, Salkaro offers a variety of online games to entertain and improve your skills. Play now and discover your new favorite game!',
         url: "https://isitdown.salkaro.com",
         images: [
             {
-                url: "https://i.imgur.com/yYl4AE0.png",
+                url: "https://i.imgur.com/1SQQywr.png",
                 width: 2496,
                 height: 1221,
-                alt: "Is This Website Down? Check Website Status Instantly - Salkaro",
+                alt: "Fun Games Collection - Salkaro",
             }
         ]
     },
