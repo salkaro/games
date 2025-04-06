@@ -16,7 +16,6 @@ const LayoutGames: React.FC<LayoutGamesProps> = ({ title, description, children 
             <section className='w-full h-full'>
                 {children}
             </section>
-
         </div>
     )
 }

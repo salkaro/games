@@ -51,9 +51,7 @@ export default function RootLayout({
                 {children}
 
                 {/* Footer */}
-                <div className='stick bottom-0'>
-                    <Footer />
-                </div>
+                <Footer />
             </body>
         </html>
     );

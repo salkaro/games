@@ -27,22 +27,21 @@ const Footer = () => {
             <FooterColumn>
                 <FooterLink text="About Us" href="https://salkaro.com/about" />
                 <FooterLink text="Attributions" href="https://salkaro.com/attributions" />
-                <FooterLink text="Careers" href="https://salkaro.com/careers" />
-                <FooterLink text="Privacy Policy" href="https://games.salkaro.com/privacy-policy" />
+                <FooterLink text="Privacy Policy" href="/privacy-policy" />
+                <FooterLink text="FAQs" href="https://salkaro.com/faq" />
             </FooterColumn>
 
             {/* Resources Section */}
             <FooterColumn>
-                <FooterLink text="Blog" href="https://salkaro.com/blog" />
-                <FooterLink text="Help Center" href="https://salkaro.com/help" />
-                <FooterLink text="FAQs" href="https://salkaro.com/faq" />
-                <FooterLink text="Documentation" href="https://salkaro.com/docs" />
+                <FooterLink text="Flippify" href="https://flippify.io?ref=salkaro-games" />
+                <FooterLink text="Discord" href="https://discord.gg/aHXVSMkmpk" />
+                <FooterLink text="Code Online" href="https://salkaro.com/write-code" />
             </FooterColumn>
 
-            {/* Contact Section */}
+            {/* Other websites Section */}
             <FooterColumn>
                 <FooterLink text="Is It Down?" href="https://isitdown.salkaro.com" />
-                <FooterLink text="Timer" href="https://timer.salkaro.com" />
+                <FooterLink text="Games" href="https://games.salkaro.com" />
                 <FooterLink text="Study" href="https://salkaro.com/study-materials" />
                 <FooterLink text="Code Demos" href="https://salkaro.com/code-demos" />
             </FooterColumn>
