@@ -28,7 +28,7 @@ const Footer = () => {
                 <FooterLink text="About Us" href="https://salkaro.com/about" />
                 <FooterLink text="Attributions" href="https://salkaro.com/attributions" />
                 <FooterLink text="Careers" href="https://salkaro.com/careers" />
-                <FooterLink text="Privacy Policy" href="https://salkaro.com/privacy-policy" />
+                <FooterLink text="Privacy Policy" href="https://games.salkaro.com/privacy-policy" />
             </FooterColumn>
 
             {/* Resources Section */}
