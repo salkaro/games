@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Is This Website Down? Check Website Status Instantly - Salkaro',
         description: 'Quickly check if a website is down or experiencing issues. Enter a URL and get real-time uptime status. Free and easy-to-use website monitoring tool.',
-        url: "https://isitdown.salkaro.com",
+        url: "https://games.salkaro.com",
         images: [
             {
                 url: "https://i.imgur.com/yYl4AE0.png",

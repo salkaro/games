@@ -42,7 +42,7 @@ const Footer = () => {
             {/* Contact Section */}
             <FooterColumn>
                 <FooterLink text="Is It Down?" href="https://isitdown.salkaro.com" />
-                <FooterLink text="Games" href="https://games.salkaro.com" />
+                <FooterLink text="Timer" href="https://timer.salkaro.com" />
                 <FooterLink text="Study" href="https://salkaro.com/study-materials" />
                 <FooterLink text="Code Demos" href="https://salkaro.com/code-demos" />
             </FooterColumn>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Fun Games Collection - Salkaro',
         description: 'Explore a fun collection of interactive and engaging games for all ages! From brain teasers to action-packed challenges, Salkaro offers a variety of online games to entertain and improve your skills. Play now and discover your new favorite game!',
-        url: "https://isitdown.salkaro.com",
+        url: "https://games.salkaro.com",
         images: [
             {
                 url: "https://i.imgur.com/1SQQywr.png",

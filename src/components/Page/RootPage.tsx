@@ -2,15 +2,15 @@
 
 // Local Imports
 import Input from '../ui/Input';
-import QuickMathsGame from '../games/QuickMathsGame';
+import GameOption from './GameOption';
+import QuickMathsGame from '../games/quick-maths/QuickMathsGame';
 
 // External Imports
 import { JSX, useState } from 'react'
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
 
 const gamesComponents = {
-    "Quick Maths": { "game": <QuickMathsGame />, "desc": "Quick maths game to test your math skills.", "image": "https://i.imgur.com/nwe5xUg.png", "page": "quick-maths" },
+    "Quick Maths": { "game": <QuickMathsGame />, "desc": "Rapid Maths Calculations", "image": "https://i.imgur.com/nwe5xUg.png", "page": "quick-maths" },
 }
 
 const RootPage = () => {
@@ -48,19 +48,7 @@ const RootPage = () => {
             <section className='grid grid-cols-12 gap-2 p-5 w-full'>
                 {Object.entries(validGames).length > 0 ? (
                     Object.entries(validGames).map(([key, gameData]) => (
-                        <div key={key} className='col-span-12 sm:col-span-6 2xl:col-span-4 p-4 text-center bg-[#111111] rounded-lg cursor-pointer' onClick={() => handleClick(gameData.page)}>
-                            <h2 className='text-gray-300 font-semibold text-3xl'>{key}</h2>
-                            <figure className='flex justify-center items-center w-full'>
-                                <Image
-                                    src={gameData.image}
-                                    alt={key}
-                                    width={200}
-                                    height={200}
-                                    className='rounded-lg my-4 h-64 w-64 object-cover'
-                                />
-                            </figure>
-                            <p className='text-gray-400'>{gameData.desc}</p>
-                        </div>
+                        <GameOption key={key} keyName={key} gameData={gameData} handleClick={handleClick} />
                     ))
                 ) : (
                     <div className='col-span-12 py-10'>

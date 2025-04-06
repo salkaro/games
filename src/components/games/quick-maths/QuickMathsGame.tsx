@@ -8,6 +8,7 @@ import { getCachedData, setCachedData } from "@/utils/cache-helpers";
 import { useEffect, useState } from "react";
 
 const QuickMathsGame = () => {
+    const cacheKey = 'quick-maths-scores';
     const gameLength = 30;
     const [score, setScore] = useState<number>(0);
     const [scores, setScores] = useState<number[]>([]);
@@ -16,7 +17,7 @@ const QuickMathsGame = () => {
 
     // Load the cached scores from localStorage when the component mounts
     useEffect(() => {
-        const cachedScores = getCachedData('scores');
+        const cachedScores = getCachedData(cacheKey);
         if (cachedScores) {
             setScores(cachedScores.data);
         }
@@ -25,7 +26,7 @@ const QuickMathsGame = () => {
     // Save the scores to localStorage whenever the scores array changes
     useEffect(() => {
         if (scores.length > 0) {
-            setCachedData('scores', scores);
+            setCachedData(cacheKey, scores);
         }
     }, [scores]);
 
@@ -57,7 +58,6 @@ const QuickMathsGame = () => {
         setTimeLeft(gameLength);
         setRunning(true);
     };
-
 
 
     return (

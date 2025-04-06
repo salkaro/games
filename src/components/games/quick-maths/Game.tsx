@@ -114,7 +114,7 @@ const Game: React.FC<GameProps> = ({ score, running, setScore }) => {
                     <span>{question.operator}</span>
                     <span>{question.removedNumber === 2 ? "__" : question.num2}</span>
                     <span>=</span>
-                    <span>{question.answer}</span>
+                    <span>{Number.isInteger(question.answer) ? question.answer : question.answer.toFixed(2)}</span>
                 </section>
             )}
 
